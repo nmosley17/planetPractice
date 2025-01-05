@@ -1,4 +1,5 @@
 import { data } from "../data/data";
+import { getAsteroidsDiscoveredAfterYear } from "./e6";
 
 // SPACE DATA EXERCISE 10
 // Return a given asteroid object of data
@@ -6,6 +7,8 @@ import { data } from "../data/data";
 
 export function getAsteroidDataByName(data, asteroidName) {
   // Your code goes here...
+  let asteroidData = data.asteroids.find(asteroids => asteroids.name === asteroidName);
+  return asteroidData;
 }
 
 
